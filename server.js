@@ -4,7 +4,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, DevOps World! This Brandon from Brandevops\n');
+  res.end('Hello, DevOps World! This is Brandon from Brandevops\n');
 });
 
 server.listen(port, () => {
