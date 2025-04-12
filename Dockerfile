@@ -16,4 +16,6 @@ COPY . .
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 # Start both Node.js and NGINX
-CMD service nginx start && node server.js
+COPY start.sh /start.sh
+CMD ["/start.sh"]
+
